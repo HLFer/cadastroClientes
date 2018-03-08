@@ -23,6 +23,7 @@ session_start();
 	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
 	<link rel="stylesheet" href="https://jqueryvalidation.org/files/demo/site-demos.css">
+	<script type="text/javascript" src="../js/telMask.js"></script>
   </head>
   <body>
 		<div class="container">
@@ -45,7 +46,7 @@ session_start();
 			  
 			  <div class="form-group">
 			    <label for="exampleInputEmail1">Telefone</label>
-			    <input type="text" class="form-control" name="telefone" placeholder="Telefone - ex.:(3199999-9999)">
+			    <input type="text" class="form-control" name="telefone" placeholder="Digite o Telefone" id="phone"/>
 			  </div>
 			  <br>
 			  
@@ -67,10 +68,17 @@ session_start();
 			  </div>
 			  <br>
 			  <button class="btn btn-lg btn-warning btn-block" type="submit">Alterar</button>
+
+			  <form id="phone" method="POST">
+			  
 			</form>
-		<script>
-			//Validação dos campos digitados utilizando a biblioteca JQuery Validation
-			$( "#formulario" ).validate({
+
+			</form>
+	
+
+<script>
+//Validação dos campos digitados utilizando a biblioteca JQuery Validation
+	$( "#formulario" ).validate({
 			  rules: {
 			    nome: {
 			      required: true
@@ -123,6 +131,6 @@ session_start();
 			  }
 
 			});
-		</script>
-		</div>
-	</body>
+</script>
+</div>
+</body>

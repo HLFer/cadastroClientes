@@ -22,11 +22,6 @@ $data = array(
 //Chama o método da classe Database para inserir o novo cliente no banco
 $client = $db->registerClient($data);
 
-if(isset($_SESSION['successRegister'])){
-	echo $_SESSION['successRegister'];
-	unset($_SESSION['successRegister']);
-}
-
 ?>
 
 <!DOCTYPE html>
