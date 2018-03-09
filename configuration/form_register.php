@@ -81,6 +81,7 @@ session_start();
     	<h4>Já é cadastrado?</h4>
     	<button type="submit" class="btn btn-warning" onclick="direciona()">Login</button>
 	</div>
+	
 <script type="text/javascript">
 //Máscara para Telefone
 // Bind no input e propertychange para pegar ctrl-v
